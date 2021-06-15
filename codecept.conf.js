@@ -9,16 +9,24 @@ exports.config = {
   output: './output',
   helpers: {
     Playwright: {
-      url: 'http://localhost',
+      url: 'https://www.incollect.com/cms_login/sign_in',
       show: true,
       browser: 'chromium'
     }
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
+    mainPage: './pages/main.js',
+    homePage: './pages/home.js',
+    itemPage: './pages/item.js',
+    furniturePage: './pages/furniture.js',
   },
   bootstrap: null,
-  mocha: {},
+  mocha: {
+    "reporterOptions": {
+      "reportDir": "output"
+    }
+  },
   name: 'codeceptJsTest',
   plugins: {
     pauseOnFail: {},

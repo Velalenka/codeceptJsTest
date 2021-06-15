@@ -16,6 +16,7 @@
         "@codeceptjs/examples": "^1.2.1",
         "@codeceptjs/ui": "^0.4.5",
         "codeceptjs": "^3.0.7",
+        "mochawesome": "^6.2.2",
         "playwright": "^1.12.2"
     }
 }
